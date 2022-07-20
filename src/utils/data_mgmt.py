@@ -40,3 +40,4 @@ def save_matrix(df, text_matrix, out_path):
     msg = f"The output matrix saved at {out_path} of shape: {result.shape}"
     logging.info(msg)
     joblib.dump(result, out_path)
+
