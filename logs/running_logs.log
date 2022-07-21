@@ -18,3 +18,31 @@
 [2022-07-22 02:14:50,752: INFO: data_mgmt]: The output matrix saved at artifacts\features\test.pkl of shape: (7464, 3002)
 [2022-07-22 02:14:51,782: INFO: stage_02_featurization]: >>>>> stage Featurization completed!<<<<<
 
+[2022-07-22 02:21:53,335: INFO: stage_01_prepare_data]: 
+********************
+[2022-07-22 02:21:53,335: INFO: stage_01_prepare_data]: >>>>> stage Prepare_data started <<<<<
+[2022-07-22 02:21:53,339: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-07-22 02:21:53,341: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-07-22 02:21:53,342: INFO: common]: created directory at: artifacts\prepared
+[2022-07-22 02:21:58,450: INFO: stage_01_prepare_data]: >>>>> stage Prepare_data completed!<<<<<
+
+[2022-07-22 02:23:29,757: INFO: stage_01_prepare_data]: 
+********************
+[2022-07-22 02:23:29,758: INFO: stage_01_prepare_data]: >>>>> stage Prepare_data started <<<<<
+[2022-07-22 02:23:29,762: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-07-22 02:23:29,765: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-07-22 02:23:29,765: INFO: common]: created directory at: artifacts\prepared
+[2022-07-22 02:23:34,630: INFO: stage_01_prepare_data]: >>>>> stage Prepare_data completed!<<<<<
+
+[2022-07-22 02:23:40,929: INFO: stage_02_featurization]: 
+********************
+[2022-07-22 02:23:40,929: INFO: stage_02_featurization]: >>>>> stage Featurization started <<<<<
+[2022-07-22 02:23:40,933: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-07-22 02:23:40,936: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-07-22 02:23:40,937: INFO: common]: created directory at: artifacts\features
+[2022-07-22 02:23:42,467: INFO: common]: The input data frame artifacts\prepared\train.tsv of size (17536, 3) is read.
+[2022-07-22 02:24:20,020: INFO: data_mgmt]: The output matrix saved at artifacts\features\train.pkl of shape: (17536, 3002)
+[2022-07-22 02:24:30,170: INFO: common]: The input data frame artifacts\prepared\test.tsv of size (7464, 3) is read.
+[2022-07-22 02:24:36,151: INFO: data_mgmt]: The output matrix saved at artifacts\features\test.pkl of shape: (7464, 3002)
+[2022-07-22 02:24:36,851: INFO: stage_02_featurization]: >>>>> stage Featurization completed!<<<<<
+
