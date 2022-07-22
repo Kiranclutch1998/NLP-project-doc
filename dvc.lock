@@ -1,0 +1,56 @@
+schema: '2.0'
+stages:
+  data_preparation:
+    cmd: python src/stage_01_prepare_data.py
+    deps:
+    - path: data/data.xml
+      md5: a304afb96060aad90176268345e10355
+      size: 37891850
+    - path: src/stage_01_prepare_data.py
+      md5: 44fc44b1ed3e9a39cf5d4c5b049d40a5
+      size: 2226
+    - path: src/utils
+      md5: f9c9d530113ee22b374a9a015f56d454.dir
+      size: 5770
+      nfiles: 6
+    outs:
+    - path: artifacts/prepared
+      md5: dc639257fd7e43c167de7349d66763c4.dir
+      size: 23886351
+      nfiles: 2
+  featurization:
+    cmd: python src/stage_02_featurization.py
+    deps:
+    - path: artifacts/prepared
+      md5: dc639257fd7e43c167de7349d66763c4.dir
+      size: 23886351
+      nfiles: 2
+    - path: src/stage_02_featurization.py
+      md5: 0e77611972138a47362064a7bea09a92
+      size: 3158
+    - path: src/utils
+      md5: f9c9d530113ee22b374a9a015f56d454.dir
+      size: 5770
+      nfiles: 6
+    outs:
+    - path: artifacts/features
+      md5: 571828da921140ad06c1d1424a69d5c8.dir
+      size: 13416728
+      nfiles: 2
+  train:
+    cmd: python src/stage_03_train.py
+    deps:
+    - path: artifacts/features/train.pkl
+      md5: 48e03313ee8c3d384c8d978d76fcea92
+      size: 9347544
+    - path: src/stage_03_train.py
+      md5: d17f7f12e5c4102acd06b56dc47c5be0
+      size: 2403
+    - path: src/utils
+      md5: f9c9d530113ee22b374a9a015f56d454.dir
+      size: 5770
+      nfiles: 6
+    outs:
+    - path: artifacts/model/model.pkl
+      md5: c76612d67bfa5bcd6448a40da9f3c63a
+      size: 3184112

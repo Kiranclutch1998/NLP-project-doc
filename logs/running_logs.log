@@ -46,3 +46,15 @@
 [2022-07-22 02:24:36,151: INFO: data_mgmt]: The output matrix saved at artifacts\features\test.pkl of shape: (7464, 3002)
 [2022-07-22 02:24:36,851: INFO: stage_02_featurization]: >>>>> stage Featurization completed!<<<<<
 
+[2022-07-22 13:15:35,090: INFO: stage_03_train]: 
+********************
+[2022-07-22 13:15:35,132: INFO: stage_03_train]: >>>>> stage Training started <<<<<
+[2022-07-22 13:15:35,175: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-07-22 13:15:35,181: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-07-22 13:15:35,182: INFO: common]: created directory at: artifacts\model
+[2022-07-22 13:15:36,610: INFO: stage_03_train]: input matrix size: (17536, 3002)
+[2022-07-22 13:15:36,610: INFO: stage_03_train]: X matrix size: (17536, 3000)
+[2022-07-22 13:15:36,610: INFO: stage_03_train]: Y matrix size or labels: (17536,)
+[2022-07-22 13:15:46,539: INFO: stage_03_train]: saved our model at: artifacts\model\model.pkl
+[2022-07-22 13:15:46,545: INFO: stage_03_train]: >>>>> stage Training completed!<<<<<
+
